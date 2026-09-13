@@ -2,7 +2,6 @@
    BASE
 ========================= */
 
-
 * {
     box-sizing: border-box;
 }
@@ -233,16 +232,12 @@ section h2::before {
    SOBRE MI
 ========================= */
 
-#sobre-mi p,
-#sobre-mi li {
-    text-align: justify;
-}
-
 #sobre-mi {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     column-gap: 10%;
     align-content: center;
+
     background: #d8d0bf;
 }
 
@@ -323,8 +318,6 @@ section h2::before {
 }
 
 #proyectos article {
-
-    
     position: relative;
 
     margin-bottom: 20px;
@@ -361,8 +354,7 @@ section h2::before {
 }
 
 #proyectos article p {
-    
-
+    white-space: pre-line;
 }
 
 #proyectos article h4 {
@@ -568,8 +560,6 @@ section h2::before {
 }
 
 #experiencia article {
-    
-
     max-width: 900px;
 
     padding: 25px;
@@ -597,12 +587,7 @@ section h2::before {
 }
 
 #experiencia article p {
-
-    text-align: justify;
-
-        width: 50%;
-
-
+    white-space: pre-line;
 }
 
 #experiencia article:hover {
@@ -686,7 +671,6 @@ footer {
 }
 
 .project-description {
-    
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -696,7 +680,6 @@ footer {
 }
 
 .project-description p {
-   
     margin-top: 0;
     text-align: justify;
     white-space: normal;
@@ -712,56 +695,14 @@ footer {
         padding: 80px 6%;
     }
 
-    /* Espacio inferior para que la barra fija no tape contenido */
-    body {
-        padding-bottom: 65px;
-    }
-
-    /* El header superior se queda con el logo/nombre */
-    header {
-        position: sticky;
-        top: 0;
-    }
-
-    /* Convertimos el nav en una barra inferior fija */
     nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        min-height: 60px;
-        background: #f1ebdd;
-        border-top: 1px solid #202020;
-        border-bottom: none;
-        padding: 0 4%;
-        justify-content: center;
-        z-index: 1000;
-        transition: transform 0.3s ease-in-out;
+        padding: 0 6%;
     }
 
-    /* Ocultamos el logo de la barra inferior (el nombre ya queda arriba en el header) */
-    nav > a {
+    nav div {
         display: none;
     }
 
-    /* Distribuimos los links de manera uniforme abajo */
-    nav div {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        gap: 0;
-    }
-
-    nav div a {
-        font-size: 0.65rem;
-        text-align: center;
-        padding: 10px 4px;
-    }
-
-    /* Clase que se activará con JS para ocultar la barra */
-    nav.nav-hidden {
-        transform: translateY(100%);
-    }
     #inicio {
         grid-template-columns: 1fr;
     }
@@ -788,13 +729,10 @@ footer {
 
     #sobre-mi {
         grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
     }
 
     #sobre-mi h2 {
         grid-column: auto;
-        width: 100%;
     }
 
     #sobre-mi ul {
@@ -824,15 +762,6 @@ footer {
 
     .project-gallery-dulcinea {
         grid-template-columns: 1fr;
-    }
-
-    .dulcinea-contenido {
-        grid-template-columns: 1fr;
-    }
-
-    #experiencia article p {
-
-       width: 100%;
     }
     
 }

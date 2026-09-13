@@ -41,8 +41,11 @@
             <h1>Gonzalo Córsico</h1>
 
             <p>
-                Estudiante de Turismo y Programación interesado en
-                desarrollar soluciones tecnológicas para problemas reales.
+                "Entender el problema antes de construir la solución."
+            
+                Estudiante de Turismo y Programación enfocado en
+                transformar ideas en oportunidades reales y mejorar
+                 la forma en que funcionan los servicios.
             </p>
 
             <a href="#proyectos">Ver proyectos</a>
@@ -63,7 +66,7 @@
             Soy estudiante avanzado de
             <strong>Licenciatura en Turismo</strong> y
             <strong>Tecnicatura Universitaria en Programación</strong>,
-            combinando formación en gestión turística, tecnología y sistemas.
+            combinando formación en gestión turística, desarrollo de software y sistemas.
         </p>
 
         <p>
@@ -74,23 +77,32 @@
         </p>
 
         <p>
-            Me interesa especialmente aplicar la tecnología para resolver
-            problemas concretos y crear herramientas útiles. A lo largo
+            Me interesa especialmente el análisis de datos y la construcción de soluciones
+             modulares y prácticas, orientadas a resolver problemas concretos. A lo largo
             de mi formación desarrollé proyectos relacionados con
             <strong>gestión hotelera, sistemas ERP, simulación,
             análisis de datos y aplicaciones web</strong>.
+        </p>
+        
+        <p>
+            Al mismo tiempo, disfruto del <strong>trabajo de campo propio del turismo</strong>:
+             observar cómo funcionan los espacios y servicios turísticos y comprender 
+              los problemas que surgen en situaciones reales. Esta experiencia
+               me ayuda a identificar oportunidades donde la tecnología, el
+                análisis de datos o una solución adecuada al problema pueden mejorar un
+                 proceso concreto o resolver una necesidad específica. Creo
+                  que <strong>ese contacto con la realidad es fundamental para 
+                  desarrollar</strong> soluciones que realmente sean útiles.
         </p>
 
         <p>
             Actualmente estoy profundizando mis conocimientos en
             <strong>Python, SQL, desarrollo backend y tecnologías web</strong>,
-            mientras continúo completando ambas carreras.
+            mientras avanzo en ambas carreras.
         </p>
 
         <p>
-            Mi objetivo es desarrollar soluciones tecnológicas que
-            combinen <strong>programación, análisis y conocimiento del
-            sector turístico</strong>.
+             Mi objetivo es <strong>implementar soluciones de software aplicadas al sector turístico</strong>.
         </p>
     </div>
 
@@ -548,5 +560,26 @@
 
 </body>
 
+<script>
+    // Barra de navegación inferior retráctil en móviles
+let lastScrollTop = 0;
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function() {
+    // Solo aplicar el efecto en pantallas móviles (ancho menor o igual a 800px)
+    if (window.innerWidth <= 800) {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 60) {
+            // Desliza hacia abajo -> Ocultar barra
+            nav.classList.add('nav-hidden');
+        } else {
+            // Desliza hacia arriba -> Mostrar barra
+            nav.classList.remove('nav-hidden');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+}, { passive: true });
+</script>
 </html>
 
