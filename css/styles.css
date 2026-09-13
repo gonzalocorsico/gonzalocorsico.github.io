@@ -2,6 +2,7 @@
    BASE
 ========================= */
 
+
 * {
     box-sizing: border-box;
 }
@@ -232,12 +233,16 @@ section h2::before {
    SOBRE MI
 ========================= */
 
+#sobre-mi p,
+#sobre-mi li {
+    text-align: justify;
+}
+
 #sobre-mi {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     column-gap: 10%;
     align-content: center;
-
     background: #d8d0bf;
 }
 
@@ -318,6 +323,8 @@ section h2::before {
 }
 
 #proyectos article {
+
+    
     position: relative;
 
     margin-bottom: 20px;
@@ -354,7 +361,8 @@ section h2::before {
 }
 
 #proyectos article p {
-    white-space: pre-line;
+    
+
 }
 
 #proyectos article h4 {
@@ -560,6 +568,8 @@ section h2::before {
 }
 
 #experiencia article {
+    
+
     max-width: 900px;
 
     padding: 25px;
@@ -587,7 +597,12 @@ section h2::before {
 }
 
 #experiencia article p {
-    white-space: pre-line;
+
+    text-align: justify;
+
+        width: 50%;
+
+
 }
 
 #experiencia article:hover {
@@ -671,6 +686,7 @@ footer {
 }
 
 .project-description {
+    
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -680,6 +696,7 @@ footer {
 }
 
 .project-description p {
+   
     margin-top: 0;
     text-align: justify;
     white-space: normal;
@@ -729,10 +746,13 @@ footer {
 
     #sobre-mi {
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     #sobre-mi h2 {
         grid-column: auto;
+        width: 100%;
     }
 
     #sobre-mi ul {
@@ -762,6 +782,15 @@ footer {
 
     .project-gallery-dulcinea {
         grid-template-columns: 1fr;
+    }
+
+    .dulcinea-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    #experiencia article p {
+
+       width: 100%;
     }
     
 }
