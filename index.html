@@ -54,51 +54,59 @@
         <!-- SOBRE MÍ -->
         <!-- ==================== -->
 
-        <section id="sobre-mi">
+<section id="sobre-mi">
 
-            <h2>Sobre mí</h2>
+    <h2>Sobre mí</h2>
 
-            <p>
-                Soy estudiante avanzado de
-                <strong>Licenciatura en Turismo</strong> y
-                <strong>Tecnicatura Universitaria en Programación</strong>,
-                combinando conocimientos de gestión turística con desarrollo
-                de software.
-            </p>
+    <div class="sobre-mi-texto">
+        <p>
+            Soy estudiante avanzado de
+            <strong>Licenciatura en Turismo</strong> y
+            <strong>Tecnicatura Universitaria en Programación</strong>,
+            combinando formación en gestión turística, tecnología y sistemas.
+        </p>
 
-            <p>
-                Me interesa especialmente aplicar la tecnología para resolver
-                problemas concretos y crear herramientas útiles. A lo largo
-                de mi formación desarrollé proyectos relacionados con
-                <strong>gestión hotelera, sistemas ERP, simulación,
-                análisis de datos y aplicaciones web</strong>.
-            </p>
+        <p>
+            Mi experiencia profesional incluye
+            <strong>soporte técnico, HelpDesk, manejo de bases de datos SQL,
+            administración, ventas, atención al cliente y comunicación de
+            productos tecnológicos</strong>.
+        </p>
 
-            <p>
-                Actualmente estoy profundizando mis conocimientos en
-                <strong>Python, SQL, desarrollo backend y tecnologías web</strong>,
-                mientras continúo completando ambas carreras.
-            </p>
+        <p>
+            Me interesa especialmente aplicar la tecnología para resolver
+            problemas concretos y crear herramientas útiles. A lo largo
+            de mi formación desarrollé proyectos relacionados con
+            <strong>gestión hotelera, sistemas ERP, simulación,
+            análisis de datos y aplicaciones web</strong>.
+        </p>
 
-            <p>
-                Mi objetivo es desarrollar soluciones tecnológicas que
-                combinen <strong>programación, análisis y conocimiento del
-                sector turístico</strong>.
-            </p>
+        <p>
+            Actualmente estoy profundizando mis conocimientos en
+            <strong>Python, SQL, desarrollo backend y tecnologías web</strong>,
+            mientras continúo completando ambas carreras.
+        </p>
 
+        <p>
+            Mi objetivo es desarrollar soluciones tecnológicas que
+            combinen <strong>programación, análisis y conocimiento del
+            sector turístico</strong>.
+        </p>
+    </div>
 
-            <h3>Tecnologías</h3>
+    <div class="sobre-mi-tecnologias">
+        <h3>Tecnologías</h3>
 
-            <ul>
-                <li>Python</li>
-                <li>C#</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>HTML / CSS</li>
-            </ul>
+        <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>HTML / CSS</li>
+        </ul>
+    </div>
 
-        </section>
-
+</section>
 
         <!-- ==================== -->
         <!-- PROYECTOS -->
@@ -109,76 +117,91 @@
             <h2>Proyectos</h2>
 
 
+            
             <!-- ==================== -->
             <!-- DULCINEA -->
             <!-- ==================== -->
 
             <article>
 
-                <h3>Dulcinea — ERP para pastelería</h3>
+                <div class="dulcinea-contenido">
 
-                <p>
-                    ERP web desarrollado para centralizar la gestión de una
-                    pastelería y facilitar el control de sus operaciones.
-                </p>
+                    <!-- INFORMACIÓN -->
 
-                <!-- GALERÍA -->
+                    <div class="dulcinea-info">
 
-                <div class="project-gallery">
+                        <h3>Dulcinea — ERP para pastelería</h3>
 
-                    <a href="img/dulcinea/1.png" target="_blank">
-                        <img src="img/dulcinea/1.png" alt="Dulcinea - Panel principal">
-                    </a>
+                        <p>
+                            ERP web desarrollado para centralizar la gestión de una
+                            pastelería y facilitar el control de sus operaciones.
+                        </p>
 
-                    <a href="img/dulcinea/2.png" target="_blank">
-                        <img src="img/dulcinea/2.png" alt="Dulcinea - Gestión de inventario">
-                    </a>
+                        <h4>Funcionalidades</h4>
 
-                    <a href="img/dulcinea/3.png" target="_blank">
-                        <img src="img/dulcinea/3.png" alt="Dulcinea - Gestión de recetas">
-                    </a>
-                    <a href="img/dulcinea/4.png" target="_blank">
-                        <img src="img/dulcinea/4.png" alt="Dulcinea - Gestión de recetas">
-                    </a>
-                    <a href="img/dulcinea/5.png" target="_blank">
-                        <img src="img/dulcinea/5.png" alt="Dulcinea - Gestión de recetas">
-                    </a>
-                    <a href="img/dulcinea/6.png" target="_blank">
-                        <img src="img/dulcinea/6.png" alt="Dulcinea - Gestión de recetas">
-                    </a>
-                    <a href="img/dulcinea/7.png" target="_blank">
-                        <img src="img/dulcinea/7.png" alt="Dulcinea - Gestión de recetas">
-                    </a>
+                        <ul>
+                            <li>Gestión de inventario y stock de materias primas.</li>
+                            <li>Gestión de recetas e ingredientes.</li>
+                            <li>Costeo de recetas y cálculo de precios sugeridos.</li>
+                            <li>Gestión de pedidos y presupuestos.</li>
+                            <li>Scraping para obtener y comparar precios externos.</li>
+                            <li>Alertas automáticas de stock bajo y faltantes.</li>
+                            <li>Autenticación y gestión de usuarios.</li>
+                            <li>Sistema de backups de la base de datos.</li>
+                            <li>Migraciones para mantener actualizada la estructura de la base de datos.</li>
+                        </ul>
+
+                        <h4>Tecnologías</h4>
+
+                        <p>
+                            Python · Flask · SQLAlchemy · SQLite · Jinja2 · HTML/CSS · JavaScript
+                        </p>
+
+                        <h4>Arquitectura</h4>
+
+                        <p>
+                            Aplicación modular basada en Flask Blueprints, separando
+                            autenticación, inventario, recetas, pedidos y ofertas.
+                        </p>
+
+                    </div>
+
+
+                    <!-- GALERÍA -->
+
+                    <div class="project-gallery-dulcinea">
+
+                        <a href="img/dulcinea/1.png" target="_blank">
+                            <img src="img/dulcinea/1.png" alt="Dulcinea - Panel principal">
+                        </a>
+
+                        <a href="img/dulcinea/2.png" target="_blank">
+                            <img src="img/dulcinea/2.png" alt="Dulcinea - Gestión de inventario">
+                        </a>
+
+                        <a href="img/dulcinea/3.png" target="_blank">
+                            <img src="img/dulcinea/3.png" alt="Dulcinea - Gestión de recetas">
+                        </a>
+
+                        <a href="img/dulcinea/4.png" target="_blank">
+                            <img src="img/dulcinea/4.png" alt="Dulcinea - Gestión de recetas">
+                        </a>
+
+                        <a href="img/dulcinea/5.png" target="_blank">
+                            <img src="img/dulcinea/5.png" alt="Dulcinea - Gestión de recetas">
+                        </a>
+
+                        <a href="img/dulcinea/6.png" target="_blank">
+                            <img src="img/dulcinea/6.png" alt="Dulcinea - Gestión de recetas">
+                        </a>
+
+                        <a href="img/dulcinea/7.png" target="_blank">
+                            <img src="img/dulcinea/7.png" alt="Dulcinea - Gestión de recetas">
+                        </a>
+
+                    </div>
 
                 </div>
-
-
-                <h4>Funcionalidades</h4>
-
-                <ul>
-                    <li>Gestión de inventario y stock de materias primas.</li>
-                    <li>Gestión de recetas e ingredientes.</li>
-                    <li>Costeo de recetas y cálculo de precios sugeridos.</li>
-                    <li>Gestión de pedidos y presupuestos.</li>
-                    <li>Scraping para obtener y comparar precios externos.</li>
-                    <li>Alertas automáticas de stock bajo y faltantes.</li>
-                    <li>Autenticación y gestión de usuarios.</li>
-                    <li>Sistema de backups de la base de datos.</li>
-                    <li>Migraciones para mantener actualizada la estructura de la base de datos.</li>
-                </ul>
-
-                <h4>Tecnologías</h4>
-
-                <p>
-                    Python · Flask · SQLAlchemy · SQLite · Jinja2 · HTML/CSS · JavaScript
-                </p>
-
-                <h4>Arquitectura</h4>
-
-                <p>
-                    Aplicación modular basada en Flask Blueprints, separando
-                    autenticación, inventario, recetas, pedidos y ofertas.
-                </p>
 
 
                 <!-- LINKS -->
@@ -186,20 +209,22 @@
                 <div class="project-links">
 
                     <a href="https://github.com/gonzalocorsico/dulcinea-erp"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    target="_blank"
+                    rel="noopener noreferrer">
                         GitHub
                     </a>
 
                     <a href="https://dulcinea.pythonanywhere.com/"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    target="_blank"
+                    rel="noopener noreferrer">
                         Ver demo
                     </a>
 
                 </div>
 
             </article>
+           
+
 
 
             <!-- ==================== -->
@@ -375,34 +400,108 @@
 
             <h2>Experiencia</h2>
 
+
+            <!-- ==================== -->
+            <!-- SOFTWARE ERP -->
+            <!-- ==================== -->
+
             <article>
 
-                <h3>Community Manager — Software ERP</h3>
+                <h3>Soporte Técnico & Community Manager — Software ERP</h3>
 
                 <p>
-                    Gestión de comunicación y contenido para un software ERP,
-                    orientada a mejorar su presencia en redes sociales y
-                    comunicar sus funcionalidades de forma clara y atractiva.
+                    Experiencia en soporte y comunicación para un software ERP,
+                    combinando asistencia a usuarios y empresas con la generación
+                    de contenido y comunicación de funcionalidades del producto.
                 </p>
 
                 <h4>Responsabilidades</h4>
 
                 <ul>
+                    <li>Asistencia remota y resolución de consultas mediante HelpDesk.</li>
+                    <li>Soporte a empresas medianas y grandes.</li>
+                    <li>Atención y contacto con clientes.</li>
+                    <li>Manejo y consulta de bases de datos SQL.</li>
                     <li>Planificación y publicación de contenido para redes sociales.</li>
                     <li>Creación de piezas gráficas e imágenes para publicaciones.</li>
                     <li>Redacción de copys y textos publicitarios.</li>
                     <li>Comunicación de funcionalidades y beneficios del software.</li>
-                    <li>Adaptación del contenido a distintos formatos y públicos.</li>
                 </ul>
 
                 <h4>Áreas</h4>
 
                 <p>
-                    Community Management · Copywriting · Creación de contenido ·
-                    Comunicación de productos tecnológicos
+                    Soporte Técnico · HelpDesk · SQL · Atención al Cliente ·
+                    Community Management · Copywriting · Comunicación de productos tecnológicos
                 </p>
 
-                <a href="#">Ver experiencia</a>
+            </article>
+
+
+            <!-- ==================== -->
+            <!-- DISTRIBUIDORA -->
+            <!-- ==================== -->
+
+            <article>
+
+                <h3>Administración & Atención al Cliente — Distribuidora de Neumáticos y Gomería</h3>
+
+                <p>
+                    Experiencia en atención al público, gestión administrativa,
+                    control de inventario y operaciones comerciales dentro del
+                    rubro automotor.
+                </p>
+
+                <h4>Responsabilidades</h4>
+
+                <ul>
+                    <li>Atención y asesoramiento al público.</li>
+                    <li>Administración y control de inventario.</li>
+                    <li>Confección de facturas, remitos, recibos y presupuestos.</li>
+                    <li>Contacto y gestión con proveedores.</li>
+                    <li>Contacto y atención de clientes.</li>
+                </ul>
+
+                <h4>Áreas</h4>
+
+                <p>
+                    Atención al Cliente · Administración · Inventario ·
+                    Facturación · Gestión Comercial · Proveedores
+                </p>
+
+            </article>
+
+
+            <!-- ==================== -->
+            <!-- INDUMENTARIA -->
+            <!-- ==================== -->
+
+            <article>
+
+                <h3>Ventas & Gestión Comercial — Indumentaria</h3>
+
+                <p>
+                    Un año de experiencia en ventas presenciales y online,
+                    combinando atención al cliente, gestión de inventario
+                    y comunicación digital.
+                </p>
+
+                <h4>Responsabilidades</h4>
+
+                <ul>
+                    <li>Atención y asesoramiento al público.</li>
+                    <li>Ventas presenciales y online.</li>
+                    <li>Administración y control de inventario.</li>
+                    <li>Contacto y seguimiento de clientes.</li>
+                    <li>Generación de contenido para canales online.</li>
+                </ul>
+
+                <h4>Áreas</h4>
+
+                <p>
+                    Ventas · E-commerce · Atención al Cliente ·
+                    Inventario · Comunicación Digital
+                </p>
 
             </article>
 
@@ -450,4 +549,4 @@
 </body>
 
 </html>
-```
+
