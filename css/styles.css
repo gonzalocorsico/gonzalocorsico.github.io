@@ -103,6 +103,16 @@ nav div a:hover::after {
     width: 100%;
 }
 
+/* Estilo opcional para destacar el botón de idioma */
+nav div a.lang-switch {
+    font-weight: 700;
+    color: #c74732; /* O el color de acento que prefieras */
+}
+
+nav div a.lang-switch::after {
+    background: #c74732;
+}
+
 
 /* =========================
    INICIO
